@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeScan AI | Link Security Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SafeScan AI</h1>
+        <p>Check any URL for malware before downloading.</p>
+        <input type="text" id="urlInput" placeholder="Paste your link here...">
+        <br>
+        <button class="btn" onclick="startScan()">SCAN NOW</button>
+        
+        <div id="loading" style="display: none; margin-top: 20px;">
+            <p style="color: #00d2ff;">Analyzing file patterns...</p>
+            <div style="font-size: 0.8rem; color: #ff4757; font-weight: bold;">
+                Scanning Cloud Servers... Please wait.
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 50px; font-size: 0.8rem; opacity: 0.5; text-align: center; width: 100%;">
+        <p>&copy; 2026 SafeScan AI - All Rights Reserved</p>
+        <a href="privacy.html" style="color: white; margin-right: 15px; text-decoration: none;">Privacy Policy</a>
+        <a href="terms.html" style="color: white; text-decoration: none;">Terms of Service</a>
+    </footer>
+
+    <script>
+    function startScan() {
+        // 1. جلب الرابط الذي وضعه المستخدم
+        const urlInput = document.getElementById('urlInput').value;
+
+        // التحقق: إذا كانت الخانة فارغة، نبه المستخدم ولا تفعل شيئاً
+        if (!urlInput) {
+            alert("Please paste a link first to scan!");
+            return;
+        }
+
+        // 2. إظهار رسالة الـ Loading (لتوهم الزائر بأن الفحص حقيقي)
+        document.getElementById('loading').style.display = 'block';
+
+        // 3. فتح "الرابط المباشر" من Adsterra (لربح المال فوراً)
+        // ملاحظة: استبدل الرابط أدناه برابط الـ Direct Link الخاص بك من Adsterra
+        window.open("https://www.profitablecpmratenetwork.com/z7t7knbk?key=5a89c42f3a91b9e51f88b519774f233d", "_blank");
+
+        // 4. التحويل التلقائي لصفحة الـ CPA بعد 3 ثوانٍ
+        // هذا السطر هو "الجسر" الذي يربط index.html بـ cpa.html
+        setTimeout(function() {
+            window.location.href = "cpa.html";
+        }, 3000);
+    }
+</script>
+
+    <script src="https://pl28961226.profitablecpmratenetwork.com/93/68/9e/93689e061dfc6e2805a43536cd465d43.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+    --bg: #0f172a;
+    --card: rgba(255, 255, 255, 0.05);
+    --primary: #00d2ff;
+    --secondary: #3a7bd5;
+    --success: #2ecc71;
+    --text: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-sizing: border-box; /* لضمان عدم خروج العناصر عن الحواف */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text; /* ضروري لمتصفحات Chrome و Safari */
+    -webkit-text-fill-color: transparent;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.btn {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3);
+}
+
+.download-btn {
+    background: linear-gradient(45deg, var(--success), #27ae60);
+}
+
+.ad-slot {
+    width: 100%;
+    min-height: 90px;
+    margin: 15px 0;
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
